@@ -1,0 +1,111 @@
+/* src/App.css */
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background:rgb(227, 227, 225);
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+}
+
+header button {
+  background: #fff;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background: #f1f1f1;
+}
+
+.container {
+  display: flex;
+  height: calc(100% - 40px); 
+}
+
+.sidebar {
+  width: 300px;
+  border-left: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  overflow-y: auto;
+  margin: 20px;
+  position: relative;
+  /* gap: 20px; */
+}
+
+.main {
+  flex-grow: 1;
+  position: relative;
+}
+
+.main .buttons-container {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+.custom-node {
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1; 
+}
+
+.react-flow__edge-path {
+  pointer-events: none;
+  z-index: 0;
+}
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.main {
+  flex: 1;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-container {
+  margin-bottom: 20px;
+}
+
+.edit-node-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 90px;
+}
